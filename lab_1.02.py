@@ -14,17 +14,17 @@ f   5.0 % 2                 1.0                             Wasn't expecting thi
 Section 2
     Input                   Output                          Did it do something unexpected?
 a   a                       undefined                       Was expecting it as defined
-b   'a'
+b   'a'                     'a'
 
 Section 3
     Input                   Output                          Did it do something unexpected?
-a   'a + b'
-b   'a' + 'b'
+a   'a + b'                 'a+b'
+b   'a' + 'b'               'ab'
 
 Section 4
     Input                   Output                          Did it do something unexpected?
-a   'a' * 'b'
-b   'a' * 2
+a   'a' * 'b'               error                           Expected it to say 'ab'
+b   'a' * 2                 'aa'                            Expected it to say '2a'
 
 Part 2
 Before going to the IDE
@@ -38,21 +38,21 @@ column.
 
     Expression                  String/Integer/Float        Prediction of Result                Interpreter Result
 a   10 * 2                      integer                     20                                  20
-b   .5 * 2                      integer                     1
-c   10/2                        integer
-d   10%2                        float
-e   2 ** 3                      float
-f   (2+5)*3                     integer
-g   2 + 5 * 3                   integer
-h   'ab' + '12' + '3'           string
-i   x                           float
-j   "ab" + "cd"
-k   'abc' * 2
-l   '1'*2 + '2' * 3
-m   1 * 2 + '3' * 2
-n   'A' ** 2
-o   'bc' % 2
-p   'bc' / 2
+b   .5 * 2                      integer                     1                                   1.0
+c   10/2                        integer                     5                                   5.0
+d   10%2                        float                       0                                   0
+e   2 ** 3                      float                       6                                   8
+f   (2+5)*3                     integer                     21                                  21
+g   2 + 5 * 3                   integer                     17                                  17
+h   'ab' + '12' + '3'           string                      'ab123'                             'ab123'  
+i   x                           float                       undefined                          undefined
+j   "ab" + "cd"                 string                      'abcd'                             'abcd' 
+k   'abc' * 2                   string                      'aabbcc'                           'abcabc'    
+l   '1'*2 + '2' * 3             string                      '11222'                            '11222' 
+m   1 * 2 + '3' * 2             string                      error                              error 
+n   'A' ** 2                    string                      error                              error    
+o   'bc' % 2                    string                      error                              error 
+p   'bc' / 2                    string                      error                              error 
 
 Now go to the IDE
 Use the interpreter to evaluate the expressions, write down results in the "Interpreter Result" column.
