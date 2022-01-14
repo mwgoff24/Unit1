@@ -13,7 +13,7 @@ e   5.0 // 2                2.0                             Thought would be err
 f   5.0 % 2                 1.0                             Wasn't expecting this result
 Section 2
     Input                   Output                          Did it do something unexpected?
-a   a
+a   a                       undefined                       Was expecting it as defined
 b   'a'
 
 Section 3
