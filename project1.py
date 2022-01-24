@@ -1,5 +1,5 @@
-print("A Mad Libbed Concert: The Maybe Funny Story")
-print("Welcome to this mad lib game!")
+print("A Mad Libbed Concert: The Maybe Funny Story \n"
+"Welcome to this mad lib game!")
 print("I will ask for some words for you to input, \n"
 "and I will create a story for you.")
 proper_noun1=input("Enter a place. ")
@@ -19,5 +19,5 @@ f"It went as {adverb1} as you would expect. \n"
 f"After this {adjective1} concert, the band members practiced more. \n"
 f"Each member would {verb1} for four hours each day trying to get better. \n"
 f"Soon gig number {adjective2} would happen. \n"
-f"Each of the {adjective3} members had improved {adverb2}. \n"
+f"Each of the {adjective3} members had {adverb2} improved. \n"
 f"The audience members clapped, and the band knew how {adjective4} they had performed.")
